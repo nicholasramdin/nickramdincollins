@@ -1,4 +1,14 @@
+@import url('https://fonts.googleapis.com/css?family=Merriweather&display=swap');
 
+body{
+    background: #000;
+}
+
+h2{
+    color:#a63200;
+    text-align: center;
+    font-family: 'Merriweather', serif;
+}
 /*nav*/
 header{
 	border-bottom:1px solid #110B11;
@@ -31,7 +41,8 @@ nav a{
 	padding:10px;
 	text-decoration: none;
 	color:#110B11;
-    background-color: #A5D0A8;
+    background-color: #a63200;
+    font-family: 'Merriweather', serif;
 }
 
 nav a:hover{
@@ -152,7 +163,7 @@ nav a:hover{
     
 	}
 	body{
-        background-color: #8CADA7;
+        background-color: #a63200;
     }
 }
 /*iPhoneX close */
@@ -220,7 +231,7 @@ and (max-device-width : 1024px)  {.col{
     }
     
     body{
-        background-color: #8CADA7;
+        background-color: #a63200;
     }
 	
 }
@@ -228,25 +239,46 @@ and (max-device-width : 1024px)  {.col{
 
 /*iPad close */
 
+.grid-container {
+        display: grid;
+        grid-template-columns: auto auto auto;
+        grid-gap: 10px;
+        background-color: #000;
+        padding: 50px;
+    }
 
-.awards{background: #A5D0A8;
-	border-radius:15px;}
+    .grid-container>div {
+        background-color: #a63200;
+        text-align: center;
+        padding: 20px 0;
+        font-size: 30px;
+
+}
+
+.awards{background: #a63200;
+	border-radius:15px;
+font-family: 'Merriweather', serif;}
+
 .hername {
-    color:#17202A ;
+    color:#a63200 ;
     text-align: center;
     font-size: 28px;
-    background:linear-gradient( #A5D0A8, #F2F4CB, #A5D0A8 );
+    background:linear-gradient( #a63200,#000, #a63200);
+    font-family: 'Merriweather', serif
 }
 
 
 .hero{
-	background: #A5D0A8;
+	background: #a63200;
 	border-radius:15px;
+    font-family: 'Merriweather', serif;
 }
 
 .container, header{
 	max-width:900px;
 	margin:0 auto;
+    background: #a63200;
+    font-family: 'Merriweather', serif;
 }
 
 .row:after{
@@ -258,4 +290,10 @@ and (max-device-width : 1024px)  {.col{
 .col{
 	float:left;
 	padding:30px;
+}
+
+@media only screen and (max-device-width: 1366px) {
+  .parallax {
+    background-attachment: scroll;
+  }
 }
